@@ -1,6 +1,6 @@
 /* ============================================================================
    ADVANCED FINANCIAL ANALYTICS — SQL PORTFOLIO PROJECT
-   Author: [Your Name]
+   Author: Ankit
    Dialect: PostgreSQL 14+ (uses window functions, FILTER clause, LATERAL joins,
             generate_series, and percentile_cont — flag dialect-specific lines
             if porting to MySQL/SQL Server/Snowflake)
