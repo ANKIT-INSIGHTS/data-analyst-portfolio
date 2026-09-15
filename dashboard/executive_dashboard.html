@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Analytics — Executive Dashboard</title>
+<title>Portfolio Analytics: Executive Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
@@ -99,7 +99,7 @@
 
 <div class="masthead">
   <div>
-    <h1>Data Analytics Portfolio — Executive Dashboard</h1>
+    <h1>Data Analytics Portfolio: Executive Dashboard</h1>
     <div class="sub">Consolidated results across credit risk modeling, multi-asset portfolio risk, and finance operations analytics.</div>
   </div>
   <div class="meta">
@@ -112,7 +112,7 @@
 <div class="kpi-row">
   <div class="kpi">
     <div class="label">Best model ROC-AUC (credit risk)</div>
-    <div class="value" id="kpi-auc">—</div>
+    <div class="value" id="kpi-auc">N/A</div>
     <div class="delta pos">Gradient Boosting, beats score-only cutoff</div>
   </div>
   <div class="kpi">
@@ -142,7 +142,7 @@
 <div class="section active" id="credit">
   <div class="panel-grid">
     <div class="card">
-      <h3>ROC Curve — Model vs. Current Rule</h3>
+      <h3>ROC Curve: Model vs. Current Rule</h3>
       <div class="card-sub">Gradient Boosting and Random Forest separate good/bad loans far better than the credit-score-only cutoff.</div>
       <div class="chart-wrap"><canvas id="rocChart"></canvas></div>
     </div>
@@ -151,7 +151,7 @@
       <div class="findings">
         <ul>
           <li><b>DTI, utilization and loan-to-income</b> outrank raw credit score as standalone default predictors (hypothesis-tested, p&lt;0.001).</li>
-          <li><b>Home ownership &amp; loan purpose</b> are not significant (p=0.92, p=0.43) — correctly excluded from the scorecard.</li>
+          <li><b>Home ownership &amp; loan purpose</b> are not significant (p=0.92, p=0.43), so they are correctly excluded from the scorecard.</li>
           <li>Re-optimizing the approval threshold to ≈0.11 default-probability, instead of the legacy score cutoff, is projected to swing net portfolio profit from <b>-$4.19M to +$0.14M</b> on the test sample.</li>
         </ul>
       </div>
@@ -183,10 +183,10 @@
       <h3>Findings</h3>
       <div class="findings">
         <ul>
-          <li>Unconstrained mean-variance optimization put <b>100% into Bitcoin</b> — a textbook Markowitz instability, not a real recommendation. A 35% position cap produces a deployable allocation.</li>
+          <li>Unconstrained mean-variance optimization put <b>100% into Bitcoin</b>. That is a textbook Markowitz instability, not a real recommendation. A 35% position cap produces a deployable allocation.</li>
           <li>The capped Max-Sharpe portfolio still beats naive equal-weighting on risk-adjusted return.</li>
-          <li>Correlation-shock stress test: 95% 1-day VaR rises <b>~14%</b> when correlations move toward a crisis regime — base-case VaR understates true tail risk.</li>
-          <li>EWMA (λ=0.94) volatility forecasting reacts faster to regime change than a 21-day rolling window — use it for position limits.</li>
+          <li>Correlation-shock stress test: 95% 1-day VaR rises <b>~14%</b> when correlations move toward a crisis regime. Base-case VaR understates true tail risk.</li>
+          <li>EWMA (λ=0.94) volatility forecasting reacts faster to regime change than a 21-day rolling window, making it useful for position limits.</li>
         </ul>
       </div>
     </div>
@@ -217,9 +217,9 @@
       <h3>Findings</h3>
       <div class="findings">
         <ul>
-          <li>Every expense category tracked within budget in the sample period — largest favorable variance in <b>Office Supplies</b> (+17.1%) and <b>Utilities</b> (+16.3%).</li>
-          <li><b>Payroll</b> ran essentially on-budget (-0.7% variance) — the largest line item, so worth the tightest ongoing monitoring even at small % variance.</li>
-          <li>Full workbook (Transactions, Assumptions, Summary, Dashboard tabs) uses live SUMIFS / INDEX-MATCH formulas — no hardcoded results — so it recalculates as new transactions are added.</li>
+          <li>Every expense category tracked within budget in the sample period. The largest favorable variances were in <b>Office Supplies</b> (+17.1%) and <b>Utilities</b> (+16.3%).</li>
+          <li><b>Payroll</b> ran essentially on-budget (-0.7% variance). It is the largest line item, so even a small percentage variance merits close monitoring.</li>
+          <li>The full workbook (Transactions, Assumptions, Summary, Dashboard tabs) uses live SUMIFS / INDEX-MATCH formulas with no hardcoded results, so it recalculates as new transactions are added.</li>
         </ul>
       </div>
     </div>
@@ -236,7 +236,7 @@
 <div class="footnote">
   All figures on this dashboard are computed in the accompanying Jupyter notebooks and Excel workbook using
   synthetically generated but realistically-calibrated data (see each project's README for methodology and
-  limitations). This dashboard is a summary view — see <code>flagship-credit-risk/</code>,
+  limitations). This dashboard is a summary view. See <code>flagship-credit-risk/</code>,
   <code>portfolio-risk-forecasting/</code>, and <code>excel/Financial_KPI_Dashboard.xlsx</code> for full analysis.
 </div>
 
