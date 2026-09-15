@@ -2,7 +2,7 @@
 
 Finance-focused analytics work spanning statistical inference, machine learning, quantitative risk modeling, advanced SQL, and spreadsheet financial modeling. Each project starts with a business question, shows where an approach needed correcting, and ends with a decision-ready recommendation rather than just a chart.
 
-**[→ Open the Executive Dashboard](dashboard/executive_dashboard.html)** for a one-page summary of every result below.
+**[→ Open the Executive Dashboard](https://ankit-insights.github.io/data-analyst-portfolio/dashboard/executive_dashboard.html)** for a one-page summary of every result below.
 
 ---
 
